@@ -20,11 +20,11 @@ public:
             else
                 mp[nums[i]] = i;
         }
-        for (auto i : mp)
-        {
-            cout << i.first << " " << i.second << endl;
-        }
-        cout << "hey" << endl;
+        // for (auto i : mp)
+        // {
+        //     cout << i.first << " " << i.second << endl;
+        // }
+        // cout << "hey" << endl;
         return ans;
     }
 };
