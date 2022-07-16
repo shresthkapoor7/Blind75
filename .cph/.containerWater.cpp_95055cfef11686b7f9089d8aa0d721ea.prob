@@ -1,0 +1,1 @@
+{"name":"Local: containerWater","url":"/Users/shresthkapoor/code/cpp/Blind75/containerWater.cpp","tests":[{"id":1657978741936,"input":"9\n1 8 6 2 5 4 8 3 7","output":"49"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/shresthkapoor/code/cpp/Blind75/containerWater.cpp","group":"local","local":true}
