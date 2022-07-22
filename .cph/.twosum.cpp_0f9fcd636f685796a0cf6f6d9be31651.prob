@@ -1,1 +1,0 @@
-{"name":"Local: twosum","url":"/Users/shresthkapoor/code/cpp/Blind75/twosum.cpp","tests":[{"id":1657602213338,"input":"9 4\n2 7 11 15","output":"0 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/shresthkapoor/code/cpp/Blind75/twosum.cpp","group":"local","local":true}
