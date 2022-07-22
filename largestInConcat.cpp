@@ -52,3 +52,14 @@ int main()
 	myFunc(arr, count);
 	return 0;
 }
+
+// TEST CASE
+/*
+link -> https://www.interviewbit.com/blog/arrange-numbers-to-form-biggest-number/
+1. 4
+   546 54 548 60
+   => 60 548 546 54
+2. 8
+   1 34 3 98 9 76 45 4
+   9 98 76 45 4 34 3 1
+*/
