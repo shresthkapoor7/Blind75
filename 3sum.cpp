@@ -1,51 +1,51 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include "stdc++.h"
 using namespace std;
 class Solution
 {
 public:
-	int find(int start, int end, vector<int> arr, int value)
-	{
-		for (int i = start + 1; i < end; i++)
-		{
-			if (arr[i] == value)
-				return i;
-		}
-		return -1;
-	}
-	void threeSum(vector<int> nums)
+	vector<vector<int> > threeSum(vector<int> &nums)
 	{
 		sort(nums.begin(), nums.end());
+		int p1, p2;
 		vector<int> ans;
-		int i, j;
-		i = 0;
-		j = nums.size();
-		int temp = 0;
 
-		while (i < j)
+		vector<vector<int> > realAns;
+		for (int i = 0; i < nums.size() - 1; i++)
 		{
-			temp = nums[i] + nums[j];
-			if (find(i, j, nums, -temp) == -1)
+			if (i == 0 or i > 0 and (nums[i] != nums[i - 1]))
 			{
-				if (temp < 0)
-					i++;
-				else if (temp > 0)
-					j--;
-			}
-			else
-			{
-				ans.push_back(nums[i]);
-				ans.push_back(nums[j]);
-				ans.push_back(temp);
-				i++;
-				j--;
+				p1 = i + 1;
+				p2 = nums.size() - 1;
+				while (p1 < p2)
+				{
+					if (nums[p1] + nums[p2] + nums[i] > 0)
+					{
+						p2--;
+					}
+					else if (nums[p1] + nums[p2] + nums[i] < 0)
+					{
+						p1++;
+					}
+					else
+					{
+						ans.push_back(nums[p1]);
+						ans.push_back(nums[p2]);
+						ans.push_back(nums[i]);
+						realAns.push_back(ans);
+						ans.pop_back();
+						ans.pop_back();
+						ans.pop_back();
+						while (p1 < p2 && nums[p1] == nums[p1 + 1])
+							p1++;
+						while (p1 < p2 && nums[p2] == nums[p2 - 1])
+							p2--;
+						p1++;
+						p2--;
+					}
+				}
 			}
 		}
-		for (int i = 0; i < ans.size(); i++)
-		{
-			cout << ans[i] << " ";
-		}
+		return realAns;
 	}
 };
 int main()
