@@ -3,13 +3,13 @@ using namespace std;
 class Solution
 {
 public:
-	vector<vector<int> > threeSum(vector<int> &nums)
+	vector<vector<int>> threeSum(vector<int> &nums)
 	{
 		sort(nums.begin(), nums.end());
 		int p1, p2;
 		vector<int> ans;
 
-		vector<vector<int> > realAns;
+		vector<vector<int>> realAns;
 		for (int i = 0; i < nums.size() - 1; i++)
 		{
 			if (i == 0 or i > 0 and (nums[i] != nums[i - 1]))
