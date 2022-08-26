@@ -1,0 +1,1 @@
+{"name":"Local: rotateImage","url":"/Users/shresthkapoor/code/cpp/Blind75/rotateImage.cpp","tests":[{"id":1661509589918,"input":"3\n1 2 3 4 5 6 7 8 9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/shresthkapoor/code/cpp/Blind75/rotateImage.cpp","group":"local","local":true}
