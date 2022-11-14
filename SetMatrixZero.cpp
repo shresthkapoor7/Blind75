@@ -1,16 +1,10 @@
-#include "bits/stdc++.h"
-using namespace std;
+#include <iostream>
+#include <vector>
 
-// void init(){
-//   #ifndef ONLINE_JUDGE
-//     freopen("input.txt", "r", stdin);
-//     freopen("output.txt", "w", stdout);
-//     #endif
-// }
+using namespace std;
 
 int main()
 {
-  // init();
   int n;
   cin >> n;
   cout << n;
